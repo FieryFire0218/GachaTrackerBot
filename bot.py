@@ -2,8 +2,12 @@ from discord.ext import commands
 import discord
 import datetime
 import pytz
+from dotenv import load_dotenv
+import os
 
 BOT_TOKEN = ""
+load_dotenv()
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 CHANNEL_ID = 1239732804309352478
 
 bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
