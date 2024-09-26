@@ -5,7 +5,6 @@ import pytz
 from dotenv import load_dotenv
 import os
 
-BOT_TOKEN = ""
 load_dotenv()
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 CHANNEL_ID = 1239732804309352478
